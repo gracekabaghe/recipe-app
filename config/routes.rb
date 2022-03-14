@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   resources :general, only: [:index]
   resources :recipes, only: [:index]
   resources :public, only: [:index]
-  root 'foods#index'
+  root to: 'foods#index'
 end
