@@ -6,5 +6,5 @@ class GeneralController < ActionController::Base
     @foods = Food.where(user_id: @user.id)
     @recipes = @user.recipes
     @total = @recipes.map { |x| Recipe.total_value(x.id) }.reduce(:+)
- end
+  end
 end
