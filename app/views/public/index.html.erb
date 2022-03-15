@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render "partials/nav" %>
+    <section class="body">
+     <h1 class="heading">Public Recipes</h1>
+
+    <% @recipes.each do |recipe| %>
+
+    <div class= "recipe-border">
+
+      <div>    
+        <h2><%=recipe.name%></h2>
+        <h2>By: <%=User.find(recipe.user_id).name%></h2>
+      </div>
+
+      <div>
+        <h2>Total food Items: 40</h2>
+        <h2>Total Price: $204</h2>
+      </div>
+    </div>
+
+    <% end %>
+    </section>
+  </body>
+</html>
