@@ -1,0 +1,36 @@
+<%= form_with url: "/recipes", scope: :recipe do |form| %>
+  <div>
+
+    <div>
+      <div>
+        <%= form.label "Recipe Name" %> <br />
+        <%= form.text_field :name, placeholder: "name..", required: true %>
+      </div>
+
+      <div >
+        <div>
+        <%= form.label "Preparation time" %> <br />
+        <%= form.number_field :prep_time, placeholder: "in hours..", step: "any", required: true %>
+        </div>
+        <div>
+        <%= form.label "Cooking time" %> <br />
+        <%= form.number_field :cook_time, placeholder: "in hours..", step: "any", required: true %>
+        </div>
+      </div>
+
+      <div>
+        <%= form.label "Instructions" %> <br />
+        <%= form.text_area :description, placeholder: "in hours..", required: true %>
+      </div>
+
+      <div>
+        <%= form.check_box :public %> <br />
+        <%= form.label "Public" %> <br />
+      </div>
+
+      <div>
+        <%= form.submit "Create" %>
+      </div>
+    </div>
+  </div>
+<% end %> 

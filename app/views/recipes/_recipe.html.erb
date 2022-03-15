@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <h1>Add ingredient<h2>
+    <button>X</button>
+    <% if @foods.empty? %>
+      <p> no foods, please add some </p>
+    <% else %>
+      <%= form_with url: recipe_recipe_foods_path(@recipe.id), scope: :recipe_foods do |form| %>
+      <section>
+        <%= form.label "Food" %>
+        <%= form.select :food_id, @foods.collect { |food| [food.name, food.id] } placeholder: "Select ingredient", required: true %>
+      </section>
+      <section>
+        <%= form.number_field :quantity, placeholder: "Quantity" required: true %>
+      </section>
+        <%= form.submit "Save" %>
+    </div>
+  <% end %>
+  <% end %>
+  </div>
+</div>
+
