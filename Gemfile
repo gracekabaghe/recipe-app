@@ -6,9 +6,9 @@ ruby '3.0.3'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'bootstrap', '~> 5.1.3'
 gem 'devise'
+gem 'jquery-ui-rails'
 gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
 gem 'rubocop', '>= 1.0', '< 2.0'
-gem 'jquery-ui-rails'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
