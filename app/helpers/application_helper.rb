@@ -1,5 +1,5 @@
 module ApplicationHelper
-    def active_class(path)
+  def active_class(path)
     if request.path == path
       'active'
     else
