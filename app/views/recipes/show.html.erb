@@ -70,8 +70,8 @@
         <td> $<%=RecipeFood.value(recipe_food.id)%></td>
         <td>
         <div class="flex-btn">
-          <%= button_to "Modify", edit_recipe_recipe_food_path(recipe_food.recipe_id,recipe_food.id), html: {'data-turbo' => "false"}, :method => :get, class: "btn btn-success" %>
-          <%= button_to "Delete", recipe_recipe_food_path(recipe_food.recipe_id,recipe_food.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-danger" %>
+          <%= button_to "Modify", edit_recipe_recipe_food_path(recipe_food.recipe_id,recipe_food.id), html: {'data-turbo' => "false"}, :method => :get, class: "btn btn-warning" %>
+          <%= button_to "Delete", recipe_recipe_food_path(recipe_food.recipe_id,recipe_food.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-warning" %>
         </div>
        </td>
       </tr>
