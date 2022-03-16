@@ -17,7 +17,7 @@
 @import "bootstrap";
 
 .body {
-  margin: 20px;
+  margin: 100px;
 }
 
 .add-btn {
@@ -25,6 +25,11 @@
   justify-content: flex-end;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-brand {
@@ -48,12 +53,7 @@
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-.heading {
-  display: flex;
-  justify-content: center;
+  color: #6495ED;
 }
 
 .grid {
@@ -67,6 +67,10 @@ a {
 }
 
 hr {
-  border: 1px solid black;
+  border: 1px solid fff;
   margin-inline: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }

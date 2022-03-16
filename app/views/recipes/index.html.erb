@@ -30,7 +30,7 @@
            <%= link_to recipe_path(recipe.id), :remote => true do %>
             <h2><%=recipe.name%></h2>
             <% end %>
-            <%= button_to "Delete", recipe_path(recipe.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-danger" %>
+            <%= button_to "Delete", recipe_path(recipe.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-warning" %>
           </div>
           <h3><%=recipe.description%></h3>
         </div>
