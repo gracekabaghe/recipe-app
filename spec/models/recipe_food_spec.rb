@@ -9,7 +9,7 @@ RSpec.describe RecipeFood, type: :model do
     recipe = user1.recipes.new(name: 'Sandwich', cooking_time: '30 mins', preperation_time: '1 min',
                                description: 'How to')
 
-    subject { RecipeFood.new(food: food, quantity: 5, recipe: recipe) }
+    subject { RecipeFood.new(food:, quantity: 5, recipe:) }
 
     subject.save
   end
