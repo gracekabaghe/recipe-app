@@ -6,5 +6,12 @@ class GeneralController < ActionController::Base
     @foods = Food.where(user_id: @user.id)
     @recipes = @user.recipes
     @total = @recipes.map { |x| Recipe.total_value(x.id) }.reduce(:+)
+    @food_count = 0
+    @recipes.each do |recipe|
+      recipe_foods = recipe.recipeFoods
+      recipe_foods.each do |_food|
+        @food_count += 1
+      end
+    end
   end
 end
