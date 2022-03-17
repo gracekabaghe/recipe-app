@@ -29,38 +29,45 @@ To get a local copy up and running please follow these steps:
 - Open the command prompt in this directory.
 
 - Clone of the Repo:
-
+```
       $ git clone https://github.com/gracekabaghe/recipe-app.git
-
+```
 - Go to the repository folder in your command prompt and navigate into the project file:
-
+```
       $ cd recipe-app
-
+```
 - Install the Ruby on Rails Gems:
-
+```
       $ bundle install or bundle i
-
+```
 - To analyze and format the applictaion code run:
-
+```
       $ rubocop -A
-
+```
 - Start the server:
-
+```
       $ rails s
-
+```
 ## To run the tests
 
-- Install rspec:
+```
+      $ rspec 
+```
+##  Run
 
-      $ bundle install
+```
+  rails db: create
+```
 
-- and
+```
+  rails db:migrate
+```
 
-      $ rails generate rpesc:install
+```
+  rails s
+```
 
-- run all rspec tests:
-
-      $ rspec spec
+     
 
 ## Prerequisites
 
@@ -73,8 +80,7 @@ To get a local copy up and running please follow these steps:
 👤 **Grace Kabaghe**
 
 - [GitHub](https://github.com/gracekabaghe)
-- [Twitter]()
-- [LinkedIn]()
+- [LinkedIn](https://www.linkedin.com/in/grace-kabaghe/)
 
 👤 **Uchechi Ugboaja**
 

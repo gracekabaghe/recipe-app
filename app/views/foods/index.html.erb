@@ -36,10 +36,16 @@
             <td><%=food.name%></td>
             <td><%=food.measurement_unit%></td>
             <td><%=food.price%>$</td>
+           
             <td>
-                <%= button_to "Delete", food_path(food.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-warning" %>
+            <% if current_user == food.user %>
+           
+               <%= button_to "Delete", food_path(food.id), html: {'data-turbo' => "true"}, :method => :delete, class: "btn btn-warning" %>
+               <% end %>
             </td>
+             
           </tr>
+          
           <% end %>
         <% end %>
 
