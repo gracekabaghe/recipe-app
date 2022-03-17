@@ -67,7 +67,7 @@ To get a local copy up and running please follow these steps:
   rails s
 ```
 
-     
+  To start the app you'd need to sign up   
 
 ## Prerequisites
 
