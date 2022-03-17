@@ -30,7 +30,7 @@ To get a local copy up and running please follow these steps:
 
 - Clone of the Repo:
 
-      $ git clone https://github.com/hamid-murambiwa/Blog-App.git
+      $ git clone https://github.com/gracekabaghe/recipe-app.git
 
 - Go to the repository folder in your command prompt and navigate into the project file:
 
