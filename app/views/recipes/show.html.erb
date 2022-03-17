@@ -44,6 +44,7 @@
       <%= link_to general_index_path, :remote => true do %>
       <input type="button" class="btn btn-primary" value="Generate Shopping List">
       <%end%>
+      
       <% if can? :manage, @recipe %>
       <%= link_to new_recipe_recipe_food_path(@recipe.id), :remote => true do %>
         <input type="button" class="btn btn-primary" value="Add Ingredients">
@@ -64,6 +65,7 @@
       </tr>
 
       <% @recipe_foods.each do |recipe_food| %>
+        
       <tr>
         <td><%=Food.find(recipe_food.food_id).name%></td>
         <td><%=recipe_food.quantity%> <%=Food.find(recipe_food.food_id).measurement_unit%></td>
@@ -76,6 +78,7 @@
        </td>
       </tr>
       <%end%>
+      
       
       </table>
     </div>
