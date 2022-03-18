@@ -21,6 +21,9 @@ It has the following features:
 - Cancan
 - Capybara
 
+## Live Verson
+[Live Demo](https://amazing-recipe-app.herokuapp.com/)
+
 ---
 ## Getting Started
 
