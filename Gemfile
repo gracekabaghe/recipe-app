@@ -75,8 +75,11 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'webdrivers'
+  gem 'webdrivers' 
+  
 end
 group :production do
-  gem 'rails_12factor'
+  gem 'rails_12factor', group: :production
+  gem pg
 end
+
