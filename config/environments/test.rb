@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# frozen_string_literal: true
-
-=======
->>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 require 'active_support/core_ext/integer/time'
 
 # The test environment is used exclusively to run your application's

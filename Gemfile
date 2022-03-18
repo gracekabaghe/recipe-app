@@ -1,24 +1,15 @@
-<<<<<<< HEAD
-# frozen_string_literal: true
-
-=======
->>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-<<<<<<< HEAD
-gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
-=======
 gem 'bootstrap', '~> 5.1.3'
 gem 'cancancan'
 gem 'devise'
 gem 'jquery-ui-rails'
 gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
 gem 'rubocop', '>= 1.0', '< 2.0'
->>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -64,13 +55,9 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-<<<<<<< HEAD
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
-=======
   gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 5.0.0'
->>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 end
 
 group :development do
@@ -92,6 +79,4 @@ group :test do
 end
 group production do
   gem 'rails_12factor'
-  gem 'pg'
 end
-

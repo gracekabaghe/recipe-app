@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# frozen_string_literal: true
-
-=======
->>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
@@ -88,11 +83,7 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
 
   if ENV['RAILS_LOG_TO_STDOUT'].present?
-<<<<<<< HEAD
-    logger           = ActiveSupport::Logger.new($stdout)
-=======
     logger = ActiveSupport::Logger.new($stdout)
->>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
