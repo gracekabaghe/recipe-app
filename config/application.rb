@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 # frozen_string_literal: true
 
 require_relative 'boot'
 
+=======
+require_relative 'boot'
+
+>>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems

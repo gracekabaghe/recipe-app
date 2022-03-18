@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # frozen_string_literal: true
 
+=======
+>>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
@@ -15,7 +18,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local = false
   config.action_controller.perform_caching = true
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
@@ -85,9 +88,13 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
 
   if ENV['RAILS_LOG_TO_STDOUT'].present?
+<<<<<<< HEAD
     logger           = ActiveSupport::Logger.new($stdout)
+=======
+    logger = ActiveSupport::Logger.new($stdout)
+>>>>>>> bdecd9a5d0c87b29860b52ea8406fc47a4958792
     logger.formatter = config.log_formatter
-    config.logger    = ActiveSupport::TaggedLogging.new(logger)
+    config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
   # Do not dump schema after migrations.
